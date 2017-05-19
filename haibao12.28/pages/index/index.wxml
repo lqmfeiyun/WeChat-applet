@@ -1,0 +1,87 @@
+<!--banner-swiper-->
+<view class="first_page">
+  <view class="top">
+    <view class="title">{{title_message}}</view>
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" >
+      <block wx:for-items="{{images}}" wx:key="">
+        <swiper-item>
+          <navigator url="{{item.url}}">
+            <image src="{{item.image}}" class="slide-image" />
+          </navigator>
+          <!--<view class="bt1">{{item.bt_message}}</view>-->
+          <view class="contect1">{{item.contect_message}}</view>
+
+          <!--<text>{{item.text}}</text>-->
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--选择块-->
+  <view class="content">
+    <view class="content1">
+      <view class="content1_style fa-lipei" catchtap="baoxsc1">
+        <!--<image src="{{img_i_1}}" />-->
+        <view class="content1_style_content">{{content1_style_content_message1}}</view>
+      </view>
+      <view class="content1_style" catchtap="baoxsc">
+        <image src="{{img_i_1}}" />
+        <view class="content1_style_content">{{content1_style_content_message2}}</view>
+      </view>
+      <view class="content1_style" catchtap="dingdy">
+        <image src="{{img_i_1}}" />
+        <view class="content1_style_content">{{content1_style_content_message3}}</view>
+      </view>
+      <view class="content1_style" catchtap="qa">
+        <image src="{{img_i_1}}" />
+        <view class="content1_style_content">{{content1_style_content_message4}}</view>
+      </view>
+    </view>
+    <!--头条-->
+    <view class="content2">
+      <view class="content2_title">{{content2_title_message}}</view>
+      <view class="content2_content">
+        <image src="/img/zt.png" />
+        <view>{{content2_content_message}}</view>
+      </view>
+    </view>
+  </view>
+  <!--轮播-->
+  <view class="content3">
+    <swiper class="swiper" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+      <block wx:for="{{content3_images}}" wx:key="{{item.index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--滑动-->
+  <view class="content4">
+    <scroll-view scroll-x="true" class="content5" vertical="{{vertical}}" scroll-left="{{scrollLeft}}">
+      <view class="content4_pic" wx:for="{{scroll_5}}" wx:key="">
+        <image src="{{item}}" />
+      </view>
+    </scroll-view>
+  </view>
+  <!--滑动2-->
+  <view class="content6">
+    <swiper>
+      <block wx:for="{{content6_images}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--<view class="content7">
+    <view class="content7_title">{{content7_title_message}}</view>
+    <swiper>
+      <block wx:for-items="{{content6_images}}" wx:key="">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>-->
+</view>

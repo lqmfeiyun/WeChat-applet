@@ -1,0 +1,32 @@
+<view class="my_top">
+    <image class="my_top_img1" src="/../img/QQ.png"></image>
+    <view class=my_top_content">手机号：13800000000</view>
+    <image class="my_top_img2" src="{{arrowright}}"></image>
+</view>
+<view class="content_style_1">
+    <view class="content_style" wx:for="{{my1}}" bindtap="{{item.click}}" wx:key="">
+        <view class="content_left">
+            <image class="my_top_img3" src="{{item.img}}"></image>
+            <view class="content_index">{{item.txt}}</view>
+        </view>
+        <image class="my_top_img2" src="{{arrowright}}"></image>
+    </view>
+</view>
+<view class="content_style_2">
+    <view class="content_style" wx:for="{{my2}}" wx:key="">
+        <view class="content_left">
+            <image class="my_top_img3" src="{{item.img}}"></image>
+            <view class="content_index">{{item.txt}}</view>
+        </view>
+        <image class="my_top_img2" src="{{arrowright}}"></image>
+    </view>
+</view>
+<view class="content_style_3">
+    <view class="content_style" wx:for="{{my3}}" wx:key="">
+        <view class="content_left">
+            <image class="my_top_img3" src="{{item.img}}"></image>
+            <view class="content_index">{{item.txt}}</view>
+        </view>
+        <image class="my_top_img2" src="{{arrowright}}"></image>
+    </view>
+</view>

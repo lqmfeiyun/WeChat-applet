@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/find/find",
+    "pages/pc_login/pc_login",
+    "pages/find/shop/shop",
+    "pages/my/my",
+    "pages/bj_result/bj_result",
+    "pages/order_page/order",
+    "pages/add_car/add_car",
+    "pages/add_message/add_message",
+    "pages/modify_insurance/modify_insurance",
+    "pages/q&a/q&a",
+    "pages/baoxsc/baoxsc",
+    "pages/test/test",
+    "pages/switchcity/switchcity",
+    "pages/personInfo/personInfo",
+    "pages/editPersonInfo/editPersonInfo",
+    "pages/location/location",
+    "pages/systemInfo/systemInfo"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f0f0f0",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle":"#a8a8a8"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "海保",
+      "iconPath": "img/Page2.png",
+      "selectedIconPath": "img/Page3.png"
+    },
+    {
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "img/Page2.png",
+      "selectedIconPath": "img/Page3.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "img/Page2.png",
+      "selectedIconPath": "img/Page3.png"
+    }
+    ]
+  }
+}

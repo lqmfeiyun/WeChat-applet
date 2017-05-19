@@ -1,0 +1,451 @@
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:translate(0,0);}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear;}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8);}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../../font/../../font/icomoon.eot');
+    src:    url('../../font/icomoon.eot') format('embedded-opentype'),
+        /*url('../../font/icomoon.ttf') format('truetype'),
+        url('../../font/icomoon.woff') format('woff'),*/
+        url('../../font/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../../font/icomoon.eot');
+    src:    url('../../font/icomoon.eot') format('embedded-opentype'),
+        /*url('../../font/icomoon.ttf') format('truetype'),
+        url('../../font/icomoon.woff') format('woff'),*/
+        url('../../font/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="fa-"], [class*=" fa-"] {
+     /*use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-user-car:before {
+    content: "\e900";
+}
+.fa-user-order:before {
+    content: "\e901";
+}
+.fa-user-address:before {
+    content: "\e902";
+}
+.fa-user-gift:before {
+    content: "\e903";
+}
+.fa-user-invite:before {
+    content: "\e904";
+}
+.fa-user-tob:before {
+    content: "\e905";
+}
+.fa-user-setup:before {
+    content: "\e906";
+}
+.fa-weather-sun:before {
+    content: "\e907";
+}
+.fa-lipei:before {
+    content: "\e908";
+}
+.fa-chuangxinxian:before {
+    content: "\e909";
+}
+.fa-add-car:before {
+    content: "\e90a";
+}
+.fa-index-btn:before {
+    content: "\e90b";
+}
+.fa-kefu:before {
+    content: "\e90c";
+}
+.fa-check-bm-false:before {
+    content: "\e90d";
+}
+.fa-car:before {
+    content: "\e90e";
+}
+.fa-person:before {
+    content: "\e90f";
+}
+.fa-city:before {
+    content: "\e910";
+}
+.fa-call:before {
+    content: "\e911";
+}
+.fa-home:before {
+    content: "\e912";
+}
+.fa-gps:before {
+    content: "\e913";
+}
+.fa-choose-xz:before {
+    content: "\e914";
+}
+.fa-tuijian:before {
+    content: "\e915";
+}
+.fa-address:before {
+    content: "\e916";
+}
+.fa-change-password:before {
+    content: "\e917";
+}
+.fa-check-bm-true:before {
+    content: "\e918";
+}
+.fa-code:before {
+    content: "\e919";
+}
+.fa-phone:before {
+    content: "\e91a";
+}
+.fa-suggestion:before {
+    content: "\e91b";
+}
+.fa-dingdan-all:before {
+    content: "\e91c";
+}
+.fa-check-xz-false:before {
+    content: "\e91d";
+}
+.fa-help:before {
+    content: "\e91e";
+}
+.fa-user:before {
+    content: "\e91f";
+}
+.fa-star:before {
+    content: "\e920";
+}
+.fa-check-xz-true:before {
+    content: "\e921";
+}
+.fa-setup:before {
+    content: "\e922";
+}
+.fa-close:before {
+    content: "\e923";
+}
+.fa-check-car:before {
+    content: "\e924";
+}
+.fa-gift:before {
+    content: "\e925";
+}
+.fa-delete:before {
+    content: "\e926";
+}
+.fa-check-false:before {
+    content: "\e927";
+}
+.fa-angle-right:before {
+    content: "\e928";
+}
+.fa-angle-up:before {
+    content: "\e929";
+}
+.fa-angle-left:before {
+    content: "\e92a";
+}
+.fa-angle-down:before {
+    content: "\e92b";
+}
+.fa-update:before {
+    content: "\e92c";
+}
+.fa-back-left:before {
+    content: "\e92d";
+}
+.fa-aboutus:before {
+    content: "\e92e";
+}
+.fa-money:before {
+    content: "\e92f";
+}
+.fa-mark1:before {
+    content: "\e930";
+}
+.fa-find:before {
+    content: "\e931";
+}
+.fa-dingdan:before {
+    content: "\e932";
+}
+.fa-check-true:before {
+    content: "\e933";
+}
+.fa-logout:before {
+    content: "\e934";
+}
+.fa-password:before {
+    content: "\e935";
+}
+.fa-my-car:before {
+    content: "\e936";
+}
+.fa-load:before {
+    content: "\e937";
+}
+.fa-uniE931:before {
+    content: "\e938";
+}
+.fa-bianji:before {
+    content: "\e939";
+}
+.fa-angle-big-right:before {
+    content: "\e93a";
+}
+
+
+
+.first_page{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+.title{
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+.top{
+  text-align: center;
+  background-image: url(https://wx.haibaobaoxian.com/hb-biz/main_sg/images/bg1.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 100% 100%;
+  background-color: #274e70;
+}
+.top navigator{
+  width: 100px;
+  margin: 5px auto;
+  border-radius: 50%;
+  z-index: 99;
+}
+.top image{
+  display: -webkit-box;
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+  border-radius: 50%;
+}
+.swiper{
+  height: 160px;
+}
+.swiper text{
+  margin: 10px auto;
+  font-size: 15px;
+  line-height: 40px;
+  color: #fff;
+}
+.swiper .bt1{
+  margin: -40px auto 0 auto;
+  width: 20%;
+  background-color: #32fe23;
+  border-radius: 10px;
+}
+.swiper .contect1{
+  /*margin: 10px auto;*/
+  font-size: 15px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/*滚动*/
+.swiper_top{
+  white-space:nowrap;
+}
+
+/*.bt1{
+  margin: -40px auto 0 auto;
+  width: 20%;
+  background-color: #32fe23;
+  border-radius: 10px;
+}
+.contect1{
+  margin: 10px auto;
+  font-size: 15px;
+  line-height: 40px;
+  color: #fff;
+}*/
+.point{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.point_style{
+  display: inline-block;
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/*.content{
+  margin: 10px auto;
+}*/
+.content1{
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.content1_style{
+  margin: 0 auto;
+}
+.content1_style image{
+  width: 20px;
+  height: 20px;
+}
+.content1_style_content,
+.footer_style_content{
+  font-family: 'Helvetica Neue',Helvetica,tahoma,arial;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.content2,
+.content7{
+  display: -webkit-box;
+  -webkit-box-align: center;
+  width: 100%;
+  background-color: #fff;
+}
+.content2_title,
+.content7_title{
+  padding:10px 20px;
+  color: dodgerblue;
+  font-weight: bolder;
+  font-style: italic;
+}
+.content2_content,
+.content7_content{
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+.content2_content image,
+.content7_content image{
+  width: 20px;
+  height:20px;
+}
+.content2_content view,
+.content7_content view{
+  padding: 5px;
+  width: 220px;
+  line-height: 25px;
+  word-break:break-all;  
+  word-wrap: break-word;
+}
+.content3{
+  margin: 10px 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+.content3 .swiper image{
+  height: 80px;
+  width: 100%;
+}
+.content4{
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+.content5,
+.content6{
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  white-space:nowrap;
+  background-color: #fff;
+}
+.content4_pic{
+  padding: 10px 0;
+  display: inline-block;
+  border-left:1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+}
+.content4_pic image,
+.content6 image{
+  display: inline-block;
+  height: 25px;
+  width: 80px;
+}
+
+.footer_box{
+  position: relative;
+  height: 70px;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: none;
+}
+.footer ul{
+  display: flex;
+  /*padding: 0 20px;*/
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_style{
+  padding-top: 10px;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+.footer_style image{
+  width: 20px;
+  height: 20px;
+}
+.footer ul li:hover{
+  background-color:#e41a3b;
+}
+
+.fa-home{
+  color: #38bcd2;
+}
+
+
+/*修改swiper原点样式*/
+page .wx-swiper-dot{
+    width: 18rpx;
+    display: inline-flex;
+    height: 18rpx;
+    margin-right: 18rpx;
+}
+page .wx-swiper-dot::before{
+    content: '';
+    background: #8c8c8f;
+    flex-grow: 1; 
+    border-radius: 100%;
+}
+page .wx-swiper-dot-active::before{
+    content: '';
+    background:#fff;
+    flex-grow: 1;
+    border-radius: 100%;
+}

@@ -1,0 +1,146 @@
+<view class="top">
+  <view class=" menu {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+<view class="menu_box">
+
+  <!-- 全部险种 -->
+
+  <!--入门型-->
+  
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <checkbox-group>
+      <view class="checkbox" wx:for="{{insurance}}">
+        <view class="content">
+          <view class="content_style">
+            <view class="content_left">
+            <label>
+              <checkbox class="checkbox_style box-center-center " checked="{{item.checked}}"></checkbox>
+              </label>
+              <view class="content_text">
+                <view class="content_title">{{item.content_title1}}</view>
+                <view class="content_tag">{{item.content_title2}}</view>
+                <view class="content_tag">{{item.content_title3}}</view>
+              </view>
+            </view>
+            <view class="content_right">
+              <view class="content_price_text" style="display:{{item.hidden1}};" catchtap="modalTap">
+                {{price_choose.value}}
+                <image class="sj_right" src="/../img/arrowright.png"></image>
+              </view>
+              <label class="content_ctext {{content_ctext_show?'check_blue':''}}" bindtap="check_box" >
+                <view class="check_circular "></view>
+                {{item.content_ctext}}
+              </label>
+            </view>
+          </view>
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+
+  <!--大众型-->
+  <view class="ctnt1" hidden="{{currentNavtab==1 ? '' : true}}">
+    <checkbox-group>
+      <label class="checkbox" wx:for="{{insurance1}}">
+        <view class="content">
+          <view class="content_style">
+            <view class="content_left">
+              <checkbox class="checkbox_style box-center-center " checked="{{item.checked}}"></checkbox>
+              <view class="content_text">
+                <view class="content_title">{{item.content_title1}}</view>
+                <view class="content_tag">{{item.content_title2}}</view>
+                <view class="content_tag">{{item.content_title3}}</view>
+              </view>
+            </view>
+            <view class="content_right">
+              <view class="content_price_text" style="display:{{item.hidden1}};">
+                {{item.price_text1}}
+                <image class="sj_right" src="/../img/arrowright.png"></image>
+              </view>
+              <view class="content_ctext" style="display:{{item.hidden2}};">
+                <view class="check_circular"></view>
+                {{item.content_ctext}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </label>
+    </checkbox-group>
+  </view>
+
+  <!--豪华型-->
+  <view class="ctnt2" hidden="{{currentNavtab==2 ? '' : true}}">
+    <checkbox-group>
+      <label class="checkbox" wx:for="{{insurance2}}">
+        <view class="content">
+          <view class="content_style">
+            <view class="content_left">
+              <checkbox class="checkbox_style box-center-center " checked="{{item.checked}}"></checkbox>
+              <view class="content_text">
+                <view class="content_title">{{item.content_title1}}</view>
+                <view class="content_tag">{{item.content_title2}}</view>
+                <view class="content_tag">{{item.content_title3}}</view>
+              </view>
+            </view>
+            <view class="content_right">
+              <view class="content_price_text" style="display:{{item.hidden1}};">
+                {{item.price_text1}}
+                <image class="sj_right" src="/../img/arrowright.png"></image>
+              </view>
+              <view class="content_ctext" style="display:{{item.hidden2}};">
+                <view class="check_circular"></view>
+                {{item.content_ctext}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </label>
+    </checkbox-group>
+  </view>
+
+  <!--自定义↓-->
+  <view class="ctnt3" hidden="{{currentNavtab==3 ? '' : true}}">
+    <checkbox-group>
+      <label class="checkbox" wx:for="{{insurance3}}">
+        <view class="content">
+          <view class="content_style">
+            <view class="content_left">
+              <checkbox class="checkbox_style box-center-center " checked="{{item.checked}}"></checkbox>
+              <view class="content_text">
+                <view class="content_title">{{item.content_title1}}</view>
+                <view class="content_tag">{{item.content_title2}}</view>
+                <view class="content_tag">{{item.content_title3}}</view>
+              </view>
+            </view>
+            <view class="content_right">
+              <view class="content_price_text" style="display:{{item.hidden1}};">
+                {{item.price_text1}}
+                <image class="sj_right" src="/../img/arrowright.png"></image>
+              </view>
+              <view class="content_ctext" style="display:{{item.hidden2}};">
+                <view class="check_circular"></view>
+                {{item.content_ctext}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="footer">
+    <text>已选险种{{check_time}}种</text>
+    <image class="footer_arrow" src="/../img/Shape + Shape 2.png"></image>
+  </view>
+</view>
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+  <radio-group>
+    <view class="radio" wx:for="{{price_choose}}">
+      <view class="price_choose_style">
+        <radio value="{{item.name}}" checked="{{item.checked}}">{{item.value}}
+        </radio>
+      </view>
+    </view>
+  </radio-group>
+</modal>

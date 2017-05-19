@@ -1,0 +1,16 @@
+<view>
+  <view wx:for="{{img_data}}">
+    <view class="find_img">
+      <image src="{{item.find}}" bindtap="{{item.click}}"></image>
+    </view>
+  </view>
+</view>
+
+<!--<navigator url="shop/shop">
+  <view class="find_img">
+    <image src="{{find_3}}"></image>
+  </view>
+  <view class="find_img">
+    <image src="/../img/bxym2.png"></image>
+  </view>
+</navigator>-->

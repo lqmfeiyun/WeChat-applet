@@ -1,0 +1,122 @@
+<scroll-view class="container" scroll-y="true" scroll-top="{{scrolltop}}">
+  <view class="top" name="tt">
+    <view class=" menu {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+      {{itemName}}
+    </view>
+  </view>
+
+  <!--<view class="top">
+  <view class="menu {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    <view class="menu_title {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部险种</view>
+    <view class="menu_title {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">意外险</view>
+    <view class="menu_title {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">旅行险</view>
+    <view class="menu_title">健康险</view>
+  </view>
+</view>-->
+
+  <!--<view class="top_box"></view>-->
+  <view class="menu_box">
+
+    <!-- 全部险种 -->
+    <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+      <view class="content">
+        <view class="content_style" wx:for="{{shop_all}}">
+          <view class="img_tag">
+            <image src="{{item.img_tag}}" />
+          </view>
+          <view class="content_head_img">
+            <image src="{{item.content_head_img}}" />
+          </view>
+          <view class="content_text">
+            <view class="content_title">{{item.content_title}}</view>
+            <view class="content_tag">{{item.content_tag}}</view>
+            <view class="content_price">
+              <view class="content_price_img">
+                <image src="/img/Page1.png" />
+              </view>
+              <view class="content_price_text">{{item.content_price_text}}</view>
+              <view class="content_insurer">{{item.content_insurer}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--意外险-->
+    <view class="ctnt1" hidden="{{currentNavtab==1 ? '' : true}}">
+      <view class="content">
+        <view class="content_style" wx:for="{{shop_yiw}}">
+          <view class="img_tag">
+            <image src="{{item.img_tag}}" />
+          </view>
+          <view class="content_head_img">
+            <image src="{{item.content_head_img}}" />
+          </view>
+          <view class="content_text">
+            <view class="content_title">{{item.content_title}}</view>
+            <view class="content_tag">{{item.content_tag}}</view>
+            <view class="content_price">
+              <view class="content_price_img">
+                <image src="/img/Page1.png" />
+              </view>
+              <view class="content_price_text">{{item.content_price_text}}</view>
+              <view class="content_insurer">{{item.content_insurer}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--旅行险-->
+    <view class="ctnt2" hidden="{{currentNavtab==2 ? '' : true}}">
+      <view class="content">
+        <view class="content_style" wx:for="{{shop_lvx}}">
+          <view class="img_tag">
+            <image src="{{item.img_tag}}" />
+          </view>
+          <view class="content_head_img">
+            <image src="{{item.content_head_img}}" />
+          </view>
+          <view class="content_text">
+            <view class="content_title">{{item.content_title}}</view>
+            <view class="content_tag">{{item.content_tag}}</view>
+            <view class="content_price">
+              <view class="content_price_img">
+                <image src="/img/Page1.png" />
+              </view>
+              <view class="content_price_text">{{item.content_price_text}}</view>
+              <view class="content_insurer">{{item.content_insurer}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--健康险-->
+    <view class="ctnt3" hidden="{{currentNavtab==3 ? '' : true}}">
+      <view class="content">
+        <view class="content_style" wx:for="{{shop_jiank}}">
+          <view class="img_tag">
+            <image src="{{item.img_tag}}" />
+          </view>
+          <view class="content_head_img">
+            <image src="{{item.content_head_img}}" />
+          </view>
+          <view class="content_text">
+            <view class="content_title">{{item.content_title}}</view>
+            <view class="content_tag">{{item.content_tag}}</view>
+            <view class="content_price">
+              <view class="content_price_img">
+                <image src="/img/Page1.png" />
+              </view>
+              <view class="content_price_text">{{item.content_price_text}}</view>
+              <view class="content_insurer">{{item.content_insurer}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+   
+   
+  </view>
+   <view class="gototop {{scrolltop>1?'active':''}}" bindtap="goToTop">
+      <!--<image src="img/returnTop.png"></image>-->
+    </view>
+</scroll-view>

@@ -1,0 +1,64 @@
+page{
+    background-color: #eee;
+}
+.bj_top,
+.bj_style{
+    padding: 10px;
+    display: flex;
+    background-color: #fff;
+}
+.bj_top_1{
+    margin:auto 10px auto 0;
+    height: 100rpx;
+    width: 15vw;
+}
+.bj_top_title{
+    display: block;
+    font-weight: bold;
+}
+.bj_content{
+    margin: auto 0;
+    color: #c3c3c3;
+    font-size: 26rpx;
+    line-height: 40rpx;
+    font-weight: 100;
+}
+.bj_top_2{
+    margin: auto 0;
+    height: 40rpx;
+    width: 40rpx;
+}
+.bj_style{
+    margin-top: 5px;
+}
+.bj_c{
+    width: 50vw;
+}
+.bj_t{
+    width: 150rpx;
+    padding-right: 10px;
+    display: flex;
+    font-family: "黑体";
+    font-size: 22rpx;
+    color: #3d3d3d;
+    justify-content: center;
+    align-items: center;
+}
+.bj_top_title1{
+    color: cornflowerblue;
+}
+.bj_top_3{
+    margin: auto 5px;
+    height: 13px;
+    width: 13px;
+}
+.bj_button{
+    padding: 5px 10px;
+    margin: auto;
+    margin-right: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}

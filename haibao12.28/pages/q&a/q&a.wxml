@@ -1,0 +1,42 @@
+<view class="top">
+<view class="menu_style">
+  <view class=" menu {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+  <view class="menu_style_hidden"></view>
+</view>
+<view class="art_box">
+  <view class="art" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="article_con">
+      <view class="art_block" wx:for="{{art_block}}">
+        <view class="art_tit ">
+          <view class="art_tit_ico">{{item.art_tit_ico}}</view>
+          <text>{{item.text}}</text>
+        </view>
+        <view class="art_tit_img">
+          <image src="{{item.art_tit_img}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="art1" hidden="{{currentNavtab==1 ? '' : true}}">
+    <view class="article_con">
+      <view class="art_block" wx:for="{{art_block_1}}">
+        <view class="art_tit ">
+          <view class="art_tit_ico">{{item.art_tit_ico}}</view>
+          <text>{{item.text}}</text>
+        </view>
+        <view class="art_tit_img">
+          <image src="{{item.art_tit_img}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="art2" hidden="{{currentNavtab==2 ? '' : true}}">
+    <view class="qAnda"  wx:for="{{qAnda}}">
+      <text class="question">{{item.question}}</text>
+      <text class="answer">{{item.answer}}</text>
+    </view>
+  </view>
+</view>
+</view>

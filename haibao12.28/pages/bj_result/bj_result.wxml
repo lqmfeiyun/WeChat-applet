@@ -1,0 +1,28 @@
+<view class="bj_top" catchtap="tjxx">
+  <image class="bj_top_1" src="{{bj_top_1}}"></image>
+  <view>
+    <text class="bj_top_title">{{bj_top_title}} </text>
+    <text class="bj_content">{{bj_content}}</text>
+  </view>
+  <image class="bj_top_2" src="{{arrowright}}"></image>
+</view>
+<view class="bj_style" catchtap="xgxz">
+  <view class="bj_t">{{bj_t}}</view>
+  <view>
+    <text class="bj_content">{{bj_content2}}</text>
+  </view>
+    <image class="bj_top_2" src="{{arrowright}}"></image>
+</view>
+<view class="bj_style" wx:for="{{bj_list_content}}" wx:key="">
+  <image class="bj_top_1" src="{{item.company_ico}}"></image>
+  <view class="bj_c">
+    <text class="bj_top_title1">{{item.bj_price}}</text>
+    <view>
+      <image class="bj_top_3" src="{{item.li_ico}}"></image>
+      <text class="bj_content">{{item.li_content}}</text>
+    </view>
+  </view>
+  <view class="bj_button"   bindtap="{{item.view_detail_click}}" url="../order_page/order">
+    <view>{{view_detail}}</view>
+  </view>
+</view>

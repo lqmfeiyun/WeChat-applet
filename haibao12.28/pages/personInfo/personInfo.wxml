@@ -1,0 +1,3 @@
+<import src="../../list/list.wxml"/>
+<template is="list" data="{{cells: cells}}"/>
+<view class="edit-btn" bindtap="editor">编 辑</view>

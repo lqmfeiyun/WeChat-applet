@@ -1,0 +1,444 @@
+<scroll-view class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle">
+
+  <!--returnTop-->
+  <view class="gototop {{scrolltop>10?'active':''}}" bindtap="goToTop">
+
+    <!--<image src="../../images/up.png"></image>-->
+  </view>
+  <view id="orderDetail" class="page">
+    <view class="content">
+      <view class="little-title">订单信息</view>
+      <view class="list-block">
+        <ul>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">承保公司</view>
+                <view id="company-info" class="item-after">
+
+                  <!-- comapny info -->安盛天平
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">投保城市</view>
+                <view id="cityname" class="item-after font-gray">
+                  杭州市
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">订单状态</view>
+                <view id="state-name" class="item-after">
+                  报价成功
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">订单价格</view>
+                <view id="premium" class="item-after font-red">
+                  4,296.26元
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">订单编号</view>
+                <view id="order-id" class="item-after">
+                  T201608310074163014
+                </view>
+              </view>
+            </view>
+          </li>
+          <li id="biz-id-box">
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">商业险保单号</view>
+                <view id="biz-id" class="item-after">
+                  1235136
+                </view>
+              </view>
+            </view>
+          </li>
+          <li id="force-id-box">
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">交强险保单号</view>
+                <view id="force-id" class="item-after">
+                  165161
+                </view>
+              </view>
+            </view>
+          </li>
+        </ul>
+      </view>
+      <view class="little-title">保险期限</view>
+      <view class="list-block">
+        <ul>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">
+                  <view>商业险生效时间</view>
+                  <view id="bizDate" class="date-txt">
+                    2016-09-01 00:00:00-2017-08-31 23:59:00
+                  </view>
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">
+                  <view>交强险生效时间</view>
+                  <view id="forceDate" class="date-txt">
+                    2016-09-01 00:00:00-2017-08-31 23:59:00
+                  </view>
+                </view>
+              </view>
+            </view>
+          </li>
+        </ul>
+      </view>
+      <view class="little-title">投保人信息</view>
+      <view class="list-block">
+        <ul>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">姓名</view>
+                <view id="user-name" class="item-after">
+                  13
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">手机号</view>
+                <view id="user-phone" class="item-after">
+                  31
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">身份证号</view>
+                <view id="user-idno" class="item-after">
+                  65
+                </view>
+              </view>
+            </view>
+          </li>
+        </ul>
+      </view>
+      <view class="little-title">车辆及车主信息</view>
+      <view class="list-block">
+        <ul>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">车牌号</view>
+                <view id="license" class="item-after">
+                  浙A752XL
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">车主</view>
+                <view id="owner-name" class="item-after">
+                  浙
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">车主证件号</view>
+                <view id="owner-idno" class="item-after">
+                  1365
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">厂牌型号</view>
+                <view id="model" class="item-after">
+                  福克斯CAF7163B5轿车 1.6L 2015 参考价（103800）
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">车辆识别码</view>
+                <view id="framecode" class="item-after">
+                  LVSHCADB4EE727991
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">发动机号</view>
+                <view id="engineno" class="item-after">
+                  465645
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">初次登记日期</view>
+                <view id="regdate" class="item-after">
+                  4524
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">是否过户车</view>
+                <view id="transfer" class="item-after">
+                  未过户
+                </view>
+              </view>
+            </view>
+          </li>
+          <li id="trans-date-box">
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">过户日期</view>
+                <view id="trans-date" class="item-after">
+                  2014-09-24
+                </view>
+              </view>
+            </view>
+          </li>
+        </ul>
+      </view>
+      <view id="address-title" class="little-title">配送信息</view>
+      <view id="address-box" class="list-block">
+        <ul>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">收件人</view>
+                <view id="address-name" class="item-after">
+                  过户
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">手机号</view>
+                <view id="address-phone" class="item-after">
+                  3213
+                </view>
+              </view>
+            </view>
+          </li>
+          <li>
+            <view class="item-content">
+
+              <!-- <view class="item-media"><i class="icon icon-form-name"></i></view> -->
+              <view class="item-inner">
+                <view class="item-title">收件地址</view>
+                <view id="address-detail" class="item-after">
+                  过户
+                </view>
+              </view>
+            </view>
+          </li>
+        </ul>
+      </view>
+      <view class="little-title">商业险投保明细</view>
+      <view id="table-one" class="table-wrapper">
+        <view class="table-box table-title">
+          <view class="box-cell cell-left">
+            险种
+          </view>
+          <view class="box-cell cell-center">
+            保额(元)
+          </view>
+          <view class="box-cell cell-right">
+            保费(元)
+          </view>
+        </view>
+        <view class="table-body-wrapper">
+
+          <!-- table  -->
+        </view>
+        <view class="table-box table-bottom">
+          <view class="box-cell cell-center">
+            商业险保费总计：
+            <view id="biz-premium" class="font-blue">
+              855元</view>
+          </view>
+        </view>
+      </view>
+      <view class="little-title">交强险投保明细</view>
+      <view id="table-two" class="table-wrapper">
+        <view class="table-body-wrapper">
+          <view class="table-box table-body">
+            <view class="box-cell cell-center">
+              交强险
+            </view>
+            <view id="force-premium" class="box-cell cell-center font-blue">
+              855元
+            </view>
+          </view>
+          <view class="table-box table-body">
+            <view class="box-cell cell-center">
+              车船税
+            </view>
+            <view id="tax-premium" class="box-cell cell-center font-blue">
+              855元
+            </view>
+          </view>
+        </view>
+        <view class="table-box table-bottom">
+          <view class="box-cell cell-center">
+            交强险保费总计：
+            <view id="force-all-premium" class="font-blue">
+              855元</view>
+          </view>
+        </view>
+      </view>
+      <view class="little-title">保费合计</view>
+      <view id="table-three" class="table-wrapper">
+        <view class="table-body-wrapper">
+          <view class="table-box table-body">
+            <view class="box-cell cell-center">
+              商业险
+            </view>
+            <view class="box-cell cell-center">
+              交强险
+            </view>
+            <view class="box-cell cell-center">
+              车船税
+            </view>
+            <view class="box-cell cell-center">
+              保费合计
+            </view>
+          </view>
+          <view class="table-box table-body">
+            <view id="final-biz" class="box-cell cell-center font-blue">
+
+              <!-- biz -->855元
+            </view>
+            <view id="final-force" class="box-cell cell-center font-blue">
+
+              <!-- force -->855元
+            </view>
+            <view id="final-tax" class="box-cell cell-center font-blue">
+
+              <!-- tax -->855元
+            </view>
+            <view id="final-all" class="box-cell cell-center font-blue">
+
+              <!-- all -->855元
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom-space"></view>
+    </view>
+
+    <!-- slide of nickname -->
+    <view class="bottom-space"></view>
+    <view class="bottom-button" bindtap="removeOrder">
+      <view class="button-box bg-white btn-delete">删除订单</view>
+    </view>
+  </view>
+
+  <!--remove-->
+</scroll-view>
+
+<!--remove-->
+<view id="slide-delete-indetail" class="slide-wrapper {{showOrHide}}">
+  <view class="slide-box">
+    <view class="slide-main">
+      <view class="slide-info">
+        <view>确认删除吗？</view>
+      </view>
+      <view class="slide-btn row ">
+        <view class="col-50 btn-cancel" bindtap="cancel">取消</view>
+        <view class="col-50 btn-submit" bindtap="enter">确认</view>
+      </view>
+    </view>
+  </view>
+</view>

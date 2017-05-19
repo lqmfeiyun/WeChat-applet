@@ -1,0 +1,44 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <!--<view class="content_line city">
+    <text class="flex" bindtap="choosearea">行驶城市</text>
+    <view class="content_line_right">
+      <text class="flex" bindtap="choosearea">{{address||"行驶城市"}}</text>
+      <include src="../../selectarea/selectarea.wxml" />
+      <image class="sj_right" bindtap="choosearea" src="/../img/arrowright.png"></image>
+    </view>
+  </view>-->
+   <view class="content_line city" bindtap="choosearea">
+    <text>行驶城市</text>
+    <view class="content_line_right">
+      <!--<text>{{array[city_style]}}</text>-->
+      <text class="flex" >{{city||"请选择"}}</text>
+      <image class="sj_right" src="/../img/arrowright.png"></image>
+    </view>
+  </view>
+  <view class="content_line">
+    <text>{{content_line_index2}}</text>
+    <view class="content_line_right">
+      <text>{{car_card_province}}</text>
+      <!--<input placeholder="请输入车牌号" maxlength="5" />{{car_card||""}}-->
+      <input maxlength="5" />{{car_card}}
+    </view>
+  </view>
+  <view class="content_line">
+    <text>{{content_line_index3}}</text>
+    <view class="content_line_right switch_right">
+      <switch type="switch" />
+    </view>
+  </view>
+  <view class="content_line">
+    <text>{{content_line_index4}}</text>
+    <view class="content_line_right">
+      <input placeholder="请输入车主姓名" />{{username}}
+    </view>
+  </view>
+</view>
+<text class="note">注：仅支持9座以下非营运私家车</text>
+  <view class="click" bindtap="submit">
+    <button formType="submit">确定</button>
+  </view>
+</form>

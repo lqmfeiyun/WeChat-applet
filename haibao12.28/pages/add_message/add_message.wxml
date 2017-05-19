@@ -1,0 +1,59 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="content_line">
+    <text>车辆识别代码</text>
+    <view class="content_line_right">
+      <input placeholder="请准确填写车俩识别代码" maxlength="17" />
+    </view>
+  </view>
+  <picker bindchange="bindPickerChange" value="{{pp_style}}" range="{{array}}">
+    <view class="content_line">
+      <text>品牌型号</text>
+      <view class="content_line_right">
+        <text>{{array[pp_style]}}</text>
+        <image class="sj_right" src="/../img/arrowright.png"></image>
+      </view>
+    </view>
+  </picker>
+  <view class="content_line">
+    <text>发动机号</text>
+    <view class="content_line_right">
+      <input placeholder="请准确输入发动机号" maxlength="20" />
+    </view>
+  </view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="content_line">
+      <text>注册日期</text>
+      <view class="content_line_right">
+        <text>{{date}}</text>
+        <image class="sj_right" src="/../img/arrowright.png"></image>
+      </view>
+    </view>
+  </picker>
+</view>
+<view class="content">
+  <view class="content_line">
+    <text>新车未上牌</text>
+    <view class="content_line_right">
+      <text>{{switchState}}</text>
+      <switch type="switch" bindchange="switchBindchange" />
+    </view>
+  </view>
+  <picker mode="date" value="{{date2}}" bindchange="bindDateChange2">
+    <view class="content_line" wx:if="{{switchState=='是'}}">
+      <text>过户日期</text>
+      <view class="content_line_right">
+        <text>{{date2}}</text>
+        <image class="sj_right" src="/../img/arrowright.png"></image>
+      </view>
+    </view>
+  </picker>
+</view>
+
+<text class="note">注：过户后第一次购买保险或行驶证的发证日期在一年内，建议开启建议开启。</text>
+<!--<navigator url="../bj_result/bj_result">-->
+  <view class="click" bindtap="submit">
+    <button formType="submit">确定</button>
+  </view>
+<!--</navigator>-->
+</form>

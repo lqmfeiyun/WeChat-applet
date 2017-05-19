@@ -1,0 +1,13 @@
+.find_img,
+.find_img image{
+    width: 110%;
+}
+page{
+    overflow-x: hidden;
+}
+.find_img{
+    height: 150px;
+}
+.find_img image{
+    height: 100%;
+}

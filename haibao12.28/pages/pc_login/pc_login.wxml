@@ -1,0 +1,25 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  
+  <view class="content_line" wx:for="{{add_car}}" wx:key=''>
+    <view class="content_line_right">
+      <view class="{{item.car_card}}">{{item.car_card_province}}</view>
+      <input maxlength="{{item.maxlength}}" placeholder="{{item.placeholder}}" value="{{item.value}}" bindinput="{{item.scanner}}" />
+    </view>
+  </view>
+  <!--<view class="content_line">
+    <view class="content_line_right">
+      <input maxlength="20" placeholder="请输入车主姓名" value="{{username}}"  bindinput={{scanner}}/>
+    </view>
+  </view>
+  <view class="content_line">
+    <view class="content_line_right">
+      <input  maxlength="13"placeholder="请输入手机号码" value="{{phonenumber}}" />
+    </view>
+  </view>-->
+</view>
+<text class="note">注：仅支持9座以下非营运私家车</text>
+  <view class="click" bindtap="submit">
+    <button formType="submit">{{submit}}</button>
+  </view>
+</form>
